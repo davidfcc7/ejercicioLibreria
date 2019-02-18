@@ -9,8 +9,6 @@ package com.mycompany.libreria;
  *
  * @author David
  */
-public class index {
-    public static void main (String[] args){
-        System.out.println("Haciendo un pull........!!");
-    }
+public class Libros {
+    
 }
