@@ -23,6 +23,8 @@ public class Libros {
     
     //Metodos
     
+    //Metodo para pedir el nombre del libro
+    
     public void ingresarNombre(){
         
         nombreLibro = (char) Integer.parseInt(JOptionPane.showInputDialog("Digite el nombre del Libro...."));
