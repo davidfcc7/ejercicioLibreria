@@ -9,6 +9,30 @@ package com.mycompany.libreria;
  *
  * @author David
  */
+
 public class Libros {
+
+    /**
+     *
+     * @param Nombre
+     */
+    public Libros(char Nombre){
+        
+        char Autor;
+        boolean version;
+        char editorial;
+        int costo;
+        int caja=100000;
+     
+        
+        System.out.print("Ingrese el nombre del libro");
+        
+        
+    }
     
 }
+
+
+    
+
+
