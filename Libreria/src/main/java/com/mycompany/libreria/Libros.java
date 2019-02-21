@@ -5,6 +5,8 @@
  */
 package com.mycompany.libreria;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author David
@@ -13,26 +15,16 @@ public class Libros {
     
     //Atributos
     
-    String nombreLibro;
-    String autorLibro;
-    String versionLibro;
-    String editorialLibro;
+    char nombreLibro;
+    char autorLibro;
+    double versionLibro;
+    char editorialLibro;
     int costoLibro;
     
-    //Metodo
-    public static void main (String[]args){
-       
-        Libros nuevoLibro = new Libros();
+    //Metodos
+    
+    public void ingresarNombre(){
         
-        nuevoLibro.autorLibro = "";
-        nuevoLibro.editorialLibro="";
-        nuevoLibro.costoLibro=0;
-        nuevoLibro.nombreLibro="";
-        nuevoLibro.versionLibro="";
-        
-        
-        
-        
+        nombreLibro = (char) Integer.parseInt(JOptionPane.showInputDialog("Digite el nombre del Libro...."));
     }
-
 }
