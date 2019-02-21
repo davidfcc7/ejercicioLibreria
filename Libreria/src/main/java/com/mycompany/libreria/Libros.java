@@ -13,20 +13,56 @@ import javax.swing.JOptionPane;
  */
 public class Libros {
     
-    //Atributos
+    private String autorLibro;
     
-    char nombreLibro;
-    char autorLibro;
-    double versionLibro;
-    char editorialLibro;
-    int costoLibro;
+    private double versionLibro;
     
-    //Metodos
+    private String editorialLibro;
     
-    //Metodo para pedir el nombre del libro
+    private int costoLibro;
     
-    public void ingresarNombre(){
+    private int stockLibro;
+    
+    private String fechaVenta;
+    
+    private int cantidadVenta;
+    
+    private int valorUnidadVenta;
+    
+    private String nombreProveedor;
+    
+    private int identificacionProveedor;
+    
+    private String telefonoProveedor;
+    
+    private String categoriaLibro;
+    
+    public void libro(String autor, double version, String editorial, int costo, int stock){
         
-        nombreLibro = (char) Integer.parseInt(JOptionPane.showInputDialog("Digite el nombre del Libro...."));
+        autorLibro = autor;
+        versionLibro = version;
+        editorialLibro = editorial;
+        costoLibro = costo;
+        stockLibro = stock;
+        
+    }
+    public void venta(String fecha, int cantidad, int valor){
+        
+        fechaVenta = fecha;
+        cantidadVenta = cantidad;
+        valorUnidadVenta = valor;
+        
+    }
+    public void proveedor(String proveedor, int identificacion, String telefono){
+        
+        nombreProveedor = proveedor;
+        identificacionProveedor = identificacion;
+        telefonoProveedor = telefono;
+        
+    }
+    public void categoria(String categoria){
+        
+        categoriaLibro = categoria;
+        
     }
 }
